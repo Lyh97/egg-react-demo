@@ -29,9 +29,19 @@
     "egg-mock": "^3.21.0",
     "egg-webpack": "^4.5.5",
     "egg-webpack-react": "^3.0.0",
-    "eslint": "^5.13.0",
+    "eslint": "^7.28.0",
+    "eslint-config-airbnb": "^18.2.1",
     "eslint-config-egg": "^7.1.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-react": "^7.24.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "husky": "^6.0.0",
     "less": "^4.1.1",
+    "lint-staged": "^11.0.0",
+    "prettier": "^2.3.1",
     "react-router-dom": "^5.2.0"
   },
   "engines": {
@@ -57,5 +67,21 @@
     "url": ""
   },
   "author": "Hunter",
-  "license": "MIT"
+  "license": "MIT",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/*.{js,jsx,mjs,ts,tsx}": [
+      "node_modules/.bin/prettier --write",
+      "node_modules/.bin/eslint --fix",
+      "git add"
+    ],
+    "src/*.{css,scss,less,json,html,md,markdown}": [
+      "node_modules/.bin/prettier --write",
+      "git add"
+    ]
+  }
 }

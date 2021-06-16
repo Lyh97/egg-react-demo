@@ -18,11 +18,11 @@ module.exports = appInfo => {
 
   config.static = {
     prefix: '/public',
-    dir: path.join(appInfo.baseDir, 'public')
+    dir: path.join(appInfo.baseDir, 'public'),
   };
 
   config.reactssr = {
-    layout: path.join(appInfo.baseDir, 'app/view/layout.html')
+    layout: path.join(appInfo.baseDir, 'app/view/layout.html'),
   }
 
   // add your middleware config here
