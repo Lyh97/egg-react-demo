@@ -25,7 +25,6 @@
     "cross-env": "^7.0.3",
     "css-loader": "^5.2.6",
     "egg-bin": "^4.16.2",
-    "egg-ci": "^1.11.0",
     "egg-mock": "^3.21.0",
     "egg-webpack": "^4.5.5",
     "egg-webpack-react": "^3.0.0",
@@ -43,9 +42,6 @@
     "test-local": "egg-bin test",
     "cov": "egg-bin cov",
     "autod": "autod"
-  },
-  "ci": {
-    "version": "10"
   },
   "repository": {
     "type": "git",
