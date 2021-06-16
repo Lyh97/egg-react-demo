@@ -29,8 +29,6 @@
     "egg-mock": "^3.21.0",
     "egg-webpack": "^4.5.5",
     "egg-webpack-react": "^3.0.0",
-    "eslint": "^5.13.0",
-    "eslint-config-egg": "^7.1.0",
     "less": "^4.1.1",
     "react-router-dom": "^5.2.0"
   },
@@ -42,11 +40,8 @@
     "stop": "egg-scripts stop --title=egg-server-egg-react-demo",
     "dev": "egg-bin dev",
     "debug": "egg-bin debug",
-    "test": "npm run lint -- --fix && npm run test-local",
     "test-local": "egg-bin test",
     "cov": "egg-bin cov",
-    "lint": "eslint .",
-    "ci": "npm run lint && npm run cov",
     "autod": "autod"
   },
   "ci": {
