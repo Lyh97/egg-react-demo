@@ -29,7 +29,7 @@ class HomeIndex extends React.Component {
                         nav 1222
                         </Menu.Item>
                         <Menu.Item key="2" icon={<VideoCameraOutlined />}>
-                        nav 23
+                        nav 2333
                         </Menu.Item>
                         <Menu.Item key="3" icon={<UploadOutlined />}>
                         nav 3
