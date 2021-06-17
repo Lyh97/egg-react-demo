@@ -35,7 +35,7 @@ class HomeIndex extends React.Component {
                         nav 34444
                         </Menu.Item>
                         <Menu.Item key="4" icon={<UserOutlined />}>
-                        nav 45556777
+                        nav 45556
                         </Menu.Item>
                     </Menu>
                     </Sider>
